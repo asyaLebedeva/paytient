@@ -1,3 +1,11 @@
+:root {
+  --main-color: #5D3EA8;
+  --basic-color: #fff;
+  --basic-margin: 170px;
+  --txt-color: #0A044B;
+  --black: #000;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,11 +14,31 @@ body {
   margin: 0 auto;
   max-width: 1280px;
   font-family: 'Roboto', sans-serif;
+  background: var(--basic-color) url('../img/header.png') no-repeat top center;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 button {
@@ -19,20 +47,27 @@ button {
   font-family: 'Inter', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
-  padding-left: 40px;
+  width: 100%;
+  padding: 0 40px 40px 0;
 }
 
 .header .container {
-  padding: 214px 0 20px 40px;
+  margin-bottom: 220px;
+  padding-top: 214px;
 }
 
 .header__sub {
-  color: #0A044B;
+  margin-bottom: 28px;
+  color: var(--txt-color);
   min-height: 20px;
 }
 
-.main-sub {
+.descr {
   width: 40%;
   font-family: 'Roboto', sans-serif; 
   font-weight: 400;
@@ -50,11 +85,85 @@ button {
 }
 
 .main-btn {
-  margin-right: 40px;
+  margin-right: 34px;
+  padding: 10px 38px 10px 20px;
   width: 189px;
   height: 44px;
-  background-color: #5D3EA8;
+  background-color: var(--main-color);
   border-radius: 8px;
-  color: #fff;
-  text-align: center;
+  color: var(--basic-color);
 }
+
+/* 1st section */
+
+.main {
+  margin-bottom: var(--basic-margin);
+  color: var(--black);
+}
+
+.main .container {
+  display: flex;
+  padding-top: 120px;
+}
+
+.main__title {
+  margin-bottom: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 58px;
+}
+
+.num__list {
+  list-style: none;
+  counter-reset: section;
+  margin-right: 30px;
+  margin-bottom: 135px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.5px;
+}
+
+.num__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.num__item::before {
+  counter-increment: section;
+  content: counter(section) " : ";
+}
+
+.main-min {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.main-min__p {
+  margin-right: 25px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.main-min__logo {
+  align-items: flex-end;
+}
+
+.main__descr {
+  margin-left: auto;
+  width: 70%;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.main__descr:not(:last-of-type) {
+  margin-bottom: 23px;
+}
+
