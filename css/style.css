@@ -240,6 +240,10 @@ img {
 
 /* 3d section */
 
+.section-members {
+  margin-bottom: 120px;
+}
+
 .section-members .container {
   text-align: center;
 }
@@ -366,9 +370,154 @@ img {
   margin-bottom: 136px;
 }
 
-.article:last-of-type {
-  margin-bottom: 120px;
+/* insurers */
+
+article:nth-of-type(2) {
+  margin-bottom: 208px;
+  padding-top: 148px;
+  border-top: 1px solid #EBEEF7;
 }
+
+/* health */
+
+article:last-of-type {
+  margin-bottom: 221px;
+  padding-top: 230px;
+  border-top: 1px solid #EBEEF7;
+  background: url('../img/health.svg') no-repeat top 112px right 40px;
+}
+
+/* figure */
+
+.part-3 {
+  padding-top: 221px;
+}
+
+.part-3 .cite__sub {
+  margin-bottom: 30px;
+  font-size: 34px;
+  line-height: 43px;
+}
+
+.part-3 .figcap {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+/* section meet */
+
+.section-meet .container {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  height: 70rem;
+}
+
+.meet__about {
+  padding-top: 132px;
+  width: 40%;
+}
+
+.meet__title {
+  margin-bottom: 26px;
+  font-family: var(--roboto);
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 58px;
+  color: var(--txt-color);
+}
+
+.meet__sub {
+  font-family: var(--inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.meet__sub:first-of-type {
+  margin-bottom: 23px;
+}
+
+.meet__sub:last-of-type {
+  margin-bottom: 28px;
+}
+
+.meet__link {
+  display: block;
+}
+
+/* images */
+
+.meet {
+  position: relative;
+  width: 50%;
+}
+
+.meet__pic {
+  position: absolute;
+  border-radius: 8px;
+}
+
+.meet__pic--1 {
+  top: 100px;
+  left: 4px;
+  width: 256px;
+  height: 419px;
+}
+
+.meet__pic--2 {
+  top: 0;
+  right: 40px;
+  width: 264px;
+  height: 208px;
+}
+
+.meet__pic--3 {
+  top: 245px;
+  right: 65px;
+  width: 210px;
+  height: 166px;
+}
+
+/* section form */
+.form-section {
+  background-color: var(--main-color);
+}
+
+.form-section .container {
+  padding: 96px 0 96px 48px;
+}
+
+.form {
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.form__title {
+  font-family: var(--roboto);
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 58px;
+  color: var(--basic-color);
+}
+
+.form__warning .form__link {
+  font-family: var(--inter);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.input__email {
+  padding: 15px;
+  width: 358px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #EBEEF7;
+  background-color: rgba(93, 62, 168, 0.5);
+  color: var(--basic);
+}
+
 
 
 
