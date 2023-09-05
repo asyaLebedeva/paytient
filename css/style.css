@@ -486,6 +486,7 @@ article:last-of-type {
 
 .form-section .container {
   padding: 96px 0 96px 48px;
+  background: url('../img/the\ boy.png') no-repeat right bottom;
 }
 
 .form {
@@ -494,6 +495,8 @@ article:last-of-type {
 }
 
 .form__title {
+  margin-bottom: 30px;
+  width: 70%;
   font-family: var(--roboto);
   font-size: 45px;
   font-weight: 400;
@@ -508,16 +511,38 @@ article:last-of-type {
   line-height: 18px;
 }
 
-.input__email {
+input[type="email"] {
+  margin-right: 16px;
   padding: 15px;
   width: 358px;
   height: 48px;
   border-radius: 8px;
   border: 1px solid #EBEEF7;
   background-color: rgba(93, 62, 168, 0.5);
-  color: var(--basic);
+  color: var(--basic-color);
 }
 
+input[type="email"]:-ms-input-placeholder {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form__btn {
+  width: 106px;
+  height: 48px;
+  background-color: var(--basic-color);
+  color: var(--txt-color);
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.form__warning,
+.form__link {
+  font-family: var(--inter);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-color);
+}
 
 
 
