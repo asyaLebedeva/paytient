@@ -679,6 +679,10 @@ input[type="email"]:-ms-input-placeholder {
   color: var(--basic-color);
 }
 
+.footer__content:not(:last-of-type) {
+  margin-right: 15px;
+}
+
 .footer__title {
   margin-bottom: 24px;
   width: 105px;
