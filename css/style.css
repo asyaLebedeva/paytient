@@ -76,8 +76,7 @@ img {
   font-family: var(--roboto); 
   font-weight: 400;
   font-size: 62px;
-  line-height: 70.4px;
-  letter-spacing: 1px;
+  line-height: 70px;
 }
 
 .min-sub {
@@ -415,13 +414,13 @@ img {
   margin-bottom: 23px;
 }
 
-.article__sub {
+.article__sub,
+.employers__btn {
   margin-bottom: 28px;
 }
 
 .employers__btn {
   display: block;
-  margin-bottom: 15px;
 }
 
 .employers__article {
