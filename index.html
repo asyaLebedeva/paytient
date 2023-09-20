@@ -37,7 +37,7 @@
          </ol>
          <div class="main-min">
            <p class="main-min__p">Proud to partner with</p>
-           <a class="main-min__link" href="#" target="_blank"><img class="main-min__logo" width="120" height="30" src="img/IMAGE.png" alt="Logo"></a>
+           <a class="main-min__link" aria-label="company link" href="#" target="_blank"><img class="main-min__logo" width="120" height="30" src="img/IMAGE.png" alt="Logo"></a>
          </div>
          </div>
          <div class="main__sub">
@@ -64,8 +64,9 @@
             <button class="work__btn main-btn">Get in touch</button>
           </div>
             <picture class="work__pic">
-              <source srcset="img/480-2-section.webp" media="(max-width: 480px)">
-              <source srcset="img/2-section.webp">
+              <source media="(max-width: 320px)" srcset="img/320-2-section.webp">
+              <source media="(max-width: 480px)" srcset="img/480-2-section.webp">
+              <source media="(max-width: 992px)" srcset="img/992-768-2-section.webp">
               <img class="work__img" src="img/2-section.webp" alt="pay-card">
             </picture>
           </div>
@@ -97,7 +98,7 @@
                 Cardholders swipe their card at the point of care and split their balance into easier-to-manage payments automatically deducted from future paychecks or another linked payment method.
               </p>
               <button class="main-btn employers__btn">Learn more</button>
-              <p class="link__sub">Are you a broker or consultant? <a class="employers__link" href="#">Right this way.</a></p>
+              <p class="link__sub">Are you a broker or consultant? <a class="employers__link" aria-label="Right this way" href="#">Right this way.</a></p>
             </article>
             <article class="article">
               <h3 class="article__title insurers__title">Insurers</h3>
@@ -126,7 +127,7 @@
        <section class="section-meet">
         <div class="container">
           <div class="meet">
-            <img src="img/meet__1st.webp" alt="member of team photo" class="meet__pic meet__pic--1">
+            <img src="img/meet__1st.webp" alt="member of team photo" class="meet__pic meet__pic--1" width="256" height="419">
             <img src="img/meet__2nd.webp" alt="team photo" class="meet__pic meet__pic--2">
             <img src="img/meet__3d.webp" alt="people team" class="meet__pic meet__pic--3">
           </div>
@@ -134,7 +135,7 @@
             <h3 class="meet__title">Meet the team</h3>
             <p class="meet__sub">We’re a global team of world-class technologists, healthcare experts, and benefits leaders building a better way for every American to access and afford care for their family.</p>
             <p class="meet__sub">Our “remote with roots” model allows us to work where we thrive and gather as needed, often in our home office in Columbia, Missouri.</p>
-            <a class="meet__link main-btn" href="#" target="_blank">Come on over</a>
+            <a class="meet__link main-btn" href="#" target="_blank" aria-label="Come on over">Come on over</a>
           </div>
         </div>
       </section>
@@ -148,7 +149,7 @@
             </label>
             <button class="form__btn" type="submit">Ok</button>
            </form>
-           <p class="form__warning">By signing up, you're confirming that you agree with our <a class="form__link" href="#" target="_blank">Terms</a>. </p>
+           <p class="form__warning">By signing up, you're confirming that you agree with our <a aria-label="Terms" class="form__link" href="#" target="_blank">Terms</a>. </p>
          </div>
        </section>
     </main>
@@ -157,10 +158,10 @@
         <div class="footer__source">
           <div class="footer__links">
             <ul class="links__list">
-              <li class="links__item"><a class="links__social insta" href="https://www.instagram.com/" target="_blank"></a></li>
-              <li class="links__item"><a class="links__social twitter" href="https://twitter.com/" target="_blank"></a></li>
-              <li class="links__item"><a class="links__social linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
-              <li class="links__item"><a class="links__social youtube" href="https://www.youtube.com/" target="_blank"></a></li>
+              <li class="links__item"><a class="links__social insta" aria-label="Go to the Instagram" href="https://www.instagram.com/" target="_blank"></a></li>
+              <li class="links__item"><a class="links__social twitter" aria-label="Go to the Twitter" href="https://twitter.com/" target="_blank"></a></li>
+              <li class="links__item"><a class="links__social linkedin" aria-label="Go to the Linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+              <li class="links__item"><a class="links__social youtube" aria-label="Go to the Youtube" href="https://www.youtube.com/" target="_blank"></a></li>
             </ul>
             <img class="footer__img" src="img/footer__logo.png" alt="logo">
           </div>  
@@ -169,39 +170,39 @@
             <div class="footer__content">
               <h3 class="footer__title">Company</h3>
               <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Press</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Careers</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                <li class="footer__item"><a aria-label="About Us" class="footer__link" href="#">About Us</a></li>
+                <li class="footer__item"><a aria-label="Press" class="footer__link" href="#">Press</a></li>
+                <li class="footer__item"><a aria-label="Careers" class="footer__link" href="#">Careers</a></li>
+                <li class="footer__item"><a aria-label="Contact Us" class="footer__link" href="#">Contact Us</a></li>
               </ul>
             </div>
             
             <div class="footer__content">
               <h3 class="footer__title">For Partners</h3>
               <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">Employers</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Insurers</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Health Systems</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Consultants</a></li>
+                <li class="footer__item"><a aria-label="Employers" class="footer__link" href="#">Employers</a></li>
+                <li class="footer__item"><a aria-label="Insures" class="footer__link" href="#">Insurers</a></li>
+                <li class="footer__item"><a aria-label="Health Systems" class="footer__link" href="#">Health Systems</a></li>
+                <li class="footer__item"><a aria-label="Consultants" class="footer__link" href="#">Consultants</a></li>
               </ul>
             </div>
       
             <div class="footer__content">
               <h3 class="footer__title paytient__title">For Paytients</h3>
               <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">Start Here</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">What Is an HPA?</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Help Center</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Download the App</a></li> <!-- download btn-->
+                <li class="footer__item"><a aia-label="Start here" class="footer__link" href="#">Start Here</a></li>
+                <li class="footer__item"><a aia-label="What is an HPA?" class="footer__link" href="#">What Is an HPA?</a></li>
+                <li class="footer__item"><a aia-label="Help Center" class="footer__link" href="#">Help Center</a></li>
+                <li class="footer__item"><a aia-label="Download App link" class="footer__link" href="#" download>Download the App</a></li>
               </ul>
             </div>
       
             <div class="footer__content">
               <h3 class="footer__title">Insights</h3>
               <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#">Retention</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">Access to Care</a></li>
-                <li class="footer__item"><a class="footer__link" href="#">DEI</a></li>
+                <li class="footer__item"><a aria-label="Retention" class="footer__link" href="#">Retention</a></li>
+                <li class="footer__item"><a aria-label="Access to Care" class="footer__link" href="#">Access to Care</a></li>
+                <li class="footer__item"><a aria-label="DEI" class="footer__link" href="#">DEI</a></li>
               </ul>
             </div>
           </div>
@@ -210,9 +211,9 @@
         <div class="footer__secure">
           <p class="footer__copy">&copy; 2022 Paytient. All right reserved.</p>
           <ul class="secure__list">
-            <li class="secure__item"><a class="secure__link" href="#">Privacy Policy</a></li>
-            <li class="secure__item"><a class="secure__link" href="#">Terms of Service</a></li>
-            <li class="secure__item"><a class="secure__link" href="#">Security</a></li>
+            <li class="secure__item"><a aria-label="Privacy policy" class="secure__link" href="#">Privacy Policy</a></li>
+            <li class="secure__item"><a aria-label="Terms of service" class="secure__link" href="#">Terms of Service</a></li>
+            <li class="secure__item"><a aria-label="Security" class="secure__link" href="#">Security</a></li>
           </ul>
         </div>
       </div>
