@@ -262,6 +262,20 @@
 
   .header div.container {
     margin-bottom: 50px;
+    padding-top: 175px;
+  }
+
+  .header__sub.min-sub {
+    width: 100%;
+  }
+
+  button.header__btn.main-btn {
+    line-height: 16px;
+  }
+
+  .header__btn.main-btn:after,
+  .header__btn.min-btn:after {
+    top: 22px;
   }
 
   .main div.container, .section-work div.container {
@@ -289,6 +303,10 @@
     text-align: center;
   }
 
+  .section-work__sub:last-of-type {
+    text-align: right;
+  }
+
   .section-work__pic {
     align-self: center;
   }
@@ -311,12 +329,19 @@
     margin-bottom: 20px;
   }
 
+  .section-members__list {
+    display: flex;
+    flex-direction: column;
+  }
+
   li.section-members__item {
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 22px;
   }
 
   p.section-members__sub {
     padding-top: 42px;
+    margin-bottom: 20px;
   }
 
   .part-2__article h3.article__title {
@@ -342,6 +367,10 @@
     padding-top: 20px;
   }
 
+  .part-3 p.cite__sub {
+    line-height: 25px;
+  }
+
   .section-meet div.container {
     padding-top: 10px;
     min-height: 55rem;
@@ -352,15 +381,28 @@
   }
 
   .meet__pic.meet__pic--2 {
-    right: 5px;
+    right: 10px;
+  }
+
+  .meet__pic.meet__pic--3 {
+    left: 3px;
   }
 
   .form-section div.container {
     padding: 46px 0 16px 15px;
+    background-image: url('../img/480-the_boy.png');
   }
 
-  .footer div.container {
-    padding: 40px 20px 40px 20px;
+  h3.form-section__title {
+    width: 100%;
+  }
+
+  .form-section__email {
+    width: 200px;
+  }
+
+  div.footer__content:not(:nth-of-type(2n)) {
+    margin-right: 20px;
   }
 
   div.footer-links {
@@ -370,10 +412,6 @@
   .footer__title {
     border-bottom: none;
     text-decoration: underline;
-  }
-
-  div.footer__content:not(:last-of-type) {
-    margin-right: 15px;
   }
 
   ul.footer-links__list {
