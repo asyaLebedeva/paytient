@@ -273,11 +273,6 @@
     line-height: 16px;
   }
 
-  .header__btn.main-btn:after,
-  .header__btn.min-btn:after {
-    top: 22px;
-  }
-
   .main div.container, .section-work div.container {
     padding-top: 0px;
   }
@@ -299,6 +294,10 @@
     margin: 0 auto;
   }
 
+  button.min-btn {
+    line-height: 16px;
+  }
+
   h2.section-work__title-work {
     text-align: center;
   }
@@ -317,6 +316,7 @@
   }
 
   .section-work__img {
+    margin-top: 40px;
     width: 369px;
     height: 405px;
   }
