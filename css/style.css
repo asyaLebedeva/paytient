@@ -805,6 +805,50 @@ input[type="email"]:-ms-input-placeholder {
   margin-bottom: 16px;
 }
 
+.footer__link {
+  position: relative;
+}
+
+.footer__link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--basic-color);
+  visibility: hidden;
+  transform: scale(0);
+  transition: ease-in-out .3s;
+}
+
+.footer__link:focus:after {
+  visibility: visible;
+  background-color: rgba(255, 266, 255, 0.7);
+  transform: scale(1);
+} 
+
+.footer__title:hover,
+.footer-secure__link:active {
+  text-shadow: 1px 0 5px rgba(255, 255, 255, 0.7);
+} 
+
+.footer__link:focus:after {
+  visibility: visible;
+  background-color: rgba(255, 266, 255, 0.7);
+  transform: scale(1);
+} 
+
+.footer__link:hover:after {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.footer-secure__link:hover,
+.footer__link:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-secure {
   padding-top: 32px;
   border-top: 1px solid #CECDDB;
@@ -836,6 +880,11 @@ input[type="email"]:-ms-input-placeholder {
 
 .footer-secure__item:not(:last-child) {
   margin-right: 24px;
+}
+
+.footer-secure__link:focus {
+  outline: 1px solid var(--basic-color);
+  outline-offset: 3px;
 }
 
 .footer__info {
