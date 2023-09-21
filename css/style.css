@@ -111,6 +111,9 @@ img {
   padding: 10px 38px 10px 20px;
   width: 189px;
   min-height: 44px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   background-color: var(--main-color);
   border-radius: 8px;
   color: var(--basic-color);
@@ -138,7 +141,7 @@ img {
   content: "";
   position: absolute;
   display: inline-block;
-  top: 17px;
+  top: 18px;
   right: 40px;
   width: 8px;
   height: 8px;
@@ -160,6 +163,7 @@ img {
 }
 
 .section-meet__link:after {
+  top: 20px;
   right: 20px;
 }
 
@@ -269,6 +273,7 @@ img {
 }
 
 .section-work__title-work {
+  margin-right: 10px;
   margin-bottom: 34px;
   font-family: var(--roboto);
   font-size: 46px;
@@ -587,7 +592,8 @@ article:last-of-type {
 
 .form-section .container {
   padding: 96px 0 96px 48px;
-  background: url('../img/the\ boy.png') no-repeat right bottom;
+  background: var(--main-color) no-repeat right bottom;
+  background-image: url('../img/the_boy.png');
 }
 
 .form {
