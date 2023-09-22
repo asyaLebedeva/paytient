@@ -152,8 +152,7 @@ button.form-section__btn:active {
 }
 
 button.form-section__btn:active {
-  background-color: rgba(184, 180, 184);
-  color: #fff;
+  background-color: #E8E5E8;
 }
 
 .min-btn {
@@ -885,6 +884,7 @@ input[type="email"]:-ms-input-placeholder {
 .footer-secure__link:focus {
   outline: 1px solid var(--basic-color);
   outline-offset: 3px;
+  border-radius: 8px;
 }
 
 .footer__info {

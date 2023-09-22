@@ -437,10 +437,40 @@
   }
 }
 
+@media (min-width: 386px) and (max-width: 400px) {
+  body {
+    max-width: 400px;
+  }
+
+  button.header__btn:after,
+  button.min-btn:after {
+    top: 23px;
+  }
+}
+
+@media (max-width: 386px) {
+  body {
+    max-width: 386px;
+  }
+
+  button.min-btn {
+    width: 100px;
+  }
+
+  button.min-btn:after {
+    right: 2px;
+  }
+}
+
 @media (max-width: 320px) {
   body {
     max-width: 320px;
     background-image: url('../img/320-header.webp');
+  }
+
+  button.header__btn:after,
+  button.min-btn:after {
+    top: 20px;
   }
 
   .section-work__img {
